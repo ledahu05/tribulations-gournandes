@@ -1,3 +1,5 @@
+$md-drawer-desktop-width: 600px !default;
+
 .main-content {
     display: flex;
     flex-direction: column;
@@ -10,6 +12,7 @@
 
         .main-content {
             flex: 1;
+            
         }
     }
 }

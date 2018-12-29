@@ -1,7 +1,7 @@
 module.exports = {
-  siteTitle: "Les tribulations gourmandes d'Alexia", // Site title.
+  siteTitle: "Tribulations gourmandes", // Site title.
   siteTitleShort: "Gourmandises", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "Les tribulations gourmandes", // Alternative site title for SEO.
+  siteTitleAlt: "Tribulations gourmandes", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
   siteUrl: "https://www.tribulations-gourmandes.fr", // Domain of your website without pathPrefix.
   pathPrefix: "/tribulations-gourmandes", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
@@ -16,7 +16,7 @@ module.exports = {
   dateFormat: "DD/MM/YYYY", // Date format for display.
   userName: "Material User", // Username to display in the author segment.
   userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
-  userLocation: "North Pole, Earth", // User location to display in the author segment.
+  userLocation: "Chorges, Hautes-Alpes", // User location to display in the author segment.
   userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
   userDescription:
     "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.", // User description to display in the author segment.
@@ -24,7 +24,7 @@ module.exports = {
   userLinks: [
     {
       label: "Email",
-      url: "mailto:tribulations-gourmandes@gmail.com",
+      url: "mailto:tribulations.gourmandes@gmail.com",
       iconClassName: "fa fa-envelope"
     }
   ],
