@@ -1,69 +1,76 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 import Layout from "../layout";
-import PostListing from "../components/PostListing";
-import SEO from "../components/SEO";
-import config from "../../data/SiteConfig";
-import { Map, TileLayer } from 'react-leaflet'
+// import MarkerLayer from 'react-leaflet-marker-layer';
 
+const position = { lng: 6.2694616, lat: 44.5381638 };
+// const markers = [
+//   {
+//     position: { lng: -122.67344700000, lat: 45.522558100000 },
+//     text: 'Voodoo Doughnut',
+//   },
+//   {
+//     position: { lng: -122.67814460000, lat: 45.5225512000000 },
+//     text: 'Bailey\'s Taproom',
+//   },
+//   {
+//     position: { lng: -122.67535700000002, lat: 45.5192743000000 },
+//     text: 'Barista'
+//   },
+//   {
+//     position: { lng: -122.65596570000001, lat: 45.5199148000001 },
+//     text: 'Base Camp Brewing'
+//   }
+// ];
 
+// class ExampleMarkerComponent extends React.Component {
+
+//   render() {
+//     const style = {
+//       border: 'solid 1px lightblue',
+//       backgroundColor: '#333333',
+//       borderRadius: '50%',
+//       marginTop: '-5px',
+//       marginLeft: '-5px',
+//       width: '10px',
+//       height: '10px'
+//     };
+
+//     return (
+//       <div style={Object.assign({}, this.props.style, style)}></div>
+//     );
+//   }
+
+// }
+
+{/* <MarkerLayer
+                            markers={markers}
+                            longitudeExtractor={m => m.position.lng}
+                            latitudeExtractor={m => m.position.lat}
+                            markerComponent={ExampleMarkerComponent} /> */}
 class Carte extends React.Component {
-  
-  render() {
-    // const position = [44.5381638, 6.2694616];
-    const position = [51.505, -0.09]
-    
-    
-    if (typeof window !== 'undefined') {
-      
-      return (
-        <Layout location={this.props.location} title="Sur la Carte">
-        <div className="index-container" style={{  height: "400px" }}>
-          <Map center={position} zoom={13}>
-          <TileLayer
-              url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
-              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-            />
-          </Map>
-        </div>
-      </Layout>
-      )
+    render() {
+        return (
+          <Layout location={this.props.location} title="Carte">
+                  <div
+                    style={{
+                        height:"700px"
+                    }}>
+                    <Map center={position} zoom={13}
+                        style={{
+                            height:"700px"
+                        }}>
+                        <TileLayer
+                          url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
+                          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                        />
+                        
+                      </Map>
+                  </div>
+                  </Layout>
+        );
     }
-    
-    return (
-      <h1>Waiting</h1>
-    );
-
-    
-  }
 }
 
 export default Carte;
-
-export const pageQuery = graphql`
-  query CarteQuery {
-    allMarkdownRemark(
-      limit: 2000
-      sort: { fields: [fields___date], order: DESC }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-            date
-          }
-          excerpt
-          timeToRead
-          frontmatter {
-            title
-            tags
-            cover
-            date
-          }
-        }
-      }
-    }
-  }
-`;
-
