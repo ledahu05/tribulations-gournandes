@@ -51,25 +51,28 @@ const position = { lng: 6.2694616, lat: 44.5381638 };
                             markerComponent={ExampleMarkerComponent} /> */}
 class Carte extends React.Component {
     render() {
-        return (
-          <Layout location={this.props.location} title="Carte">
-                  <div
-                    style={{
-                        height:"700px"
-                    }}>
-                    <Map center={position} zoom={13}
+        if (typeof window !== 'undefined') {
+            return (
+            <Layout location={this.props.location} title="Carte">
+                    <div
                         style={{
                             height:"700px"
                         }}>
-                        <TileLayer
-                          url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
-                          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                        />
-                        
-                      </Map>
-                  </div>
-                  </Layout>
-        );
+                        <Map center={position} zoom={13}
+                            style={{
+                                height:"700px"
+                            }}>
+                            <TileLayer
+                            url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
+                            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                            />
+                            
+                        </Map>
+                    </div>
+                    </Layout>
+            );
+        }
+        return <h1>Loading...</h1>
     }
 }
 
