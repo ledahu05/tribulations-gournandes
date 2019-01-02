@@ -1,7 +1,7 @@
 backend:
   name: github # Refer to https://www.netlifycms.org/docs/authentication-backends/ for auth backend list and instructions
   branch: master # Branch to update
-  repo: vagr9k/gatsby-material-starter # Repo for pushing new commits. Make sure to replace with your repo!
+  repo: ledahu05/tribulations-gournandes # Repo for pushing new commits. Make sure to replace with your repo!
 
 media_folder: static/assets
 public_folder: assets
@@ -20,3 +20,33 @@ collections:
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: restaurant
+    label: "Restaurant"
+    folder: "content/restaurant"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}.md"
+    fields:
+      - {label: "Nom", name: "title", widget: "string"}
+      - {label: "Date de publication", name: "date", widget: "datetime"}
+      - {label: "Cover Image", name: "cover", widget: "image"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Categorie", name: "category", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Latitude", name: "latitude", valueType: "float", widget: "number"}
+      - {label: "Longitude", name: "longitude", valueType: "float", widget: "number"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+  - name: producteur
+    label: "Producteur local"
+    folder: "content/producteur"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}.md"
+    fields:
+      - {label: "Nom", name: "title", widget: "string"}
+      - {label: "Date de publication", name: "date", widget: "datetime"}
+      - {label: "Cover Image", name: "cover", widget: "image"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Categorie", name: "category", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Latitude", name: "latitude", valueType: "float", widget: "number"}
+      - {label: "Longitude", name: "longitude", valueType: "float", widget: "number"}
+      - {label: "Contenu", name: "body", widget: "markdown"}

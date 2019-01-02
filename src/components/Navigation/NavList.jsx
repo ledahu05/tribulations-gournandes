@@ -15,8 +15,32 @@ function GetNavList(config) {
     }
   ];
 
+  NavList.push({
+    primaryText: "Les Restaurants",
+    leftIcon:   <FontIcon forceSize iconClassName={"fa fa-cutlery"} />,
+    component: Link,
+    to: "/restaurant"
+  });
+
+  
+
+  NavList.push({
+    primaryText: "Sur la carte",
+    leftIcon: <FontIcon forceSize iconClassName={"fa fa-map-marker"} />,
+    component: Link,
+    to: "/carte"
+  });
+
+  // NavList.push({
+  //   primaryText: link.label,
+  //   leftIcon: <FontIcon forceSize iconClassName={link.iconClassName} />,
+  //   component: "a",
+  //   href: link.url
+  // });
+
   if (config.userLinks) {
     config.userLinks.forEach(link => {
+      console.log('fonticon:' + link.iconClassName);
       NavList.push({
         primaryText: link.label,
         leftIcon: <FontIcon forceSize iconClassName={link.iconClassName} />,

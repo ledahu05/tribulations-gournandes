@@ -129,6 +129,7 @@ module.exports = {
         ]
       }
     },
+    'gatsby-plugin-react-leaflet',
     "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-feed",
