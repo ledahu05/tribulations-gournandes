@@ -10,6 +10,7 @@ import moment from "moment";
 import Media, { MediaOverlay } from "react-md/lib/Media";
 import PostTags from "../PostTags";
 import PostCover from "../PostCover";
+
 import config from "../../../data/SiteConfig";
 import "./PostPreview.scss";
 
@@ -51,7 +52,7 @@ class PostPreview extends Component {
             <MediaOverlay>
               <CardTitle title={postInfo.title}>
                 <Button raised secondary className="md-cell--right">
-                  Read
+                  Lire
                 </Button>
               </CardTitle>
             </MediaOverlay>
@@ -60,10 +61,10 @@ class PostPreview extends Component {
         <CardTitle
           expander={expand}
           avatar={<Avatar icon={<FontIcon iconClassName="fa fa-calendar" />} />}
-          title={`Published on ${moment(postInfo.date).format(
+          title={`Publié le ${moment(postInfo.date).format(
             config.dateFormat
           )}`}
-          subtitle={`${postInfo.timeToRead} min read`}
+          subtitle={`${postInfo.timeToRead} min de lecture`}
         />
 
         <CardText expandable={expand}>

@@ -45,6 +45,8 @@ export const pageQuery = graphql`
             tags
             cover
             date
+            latitude
+            longitude
           }
         }
       }

@@ -12,6 +12,7 @@ import PostInfo from "../components/PostInfo";
 import SocialLinks from "../components/SocialLinks";
 import PostSuggestions from "../components/PostSuggestions";
 import SEO from "../components/SEO";
+import PostMap from "../components/PostMap";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 import "./post.scss";
@@ -76,6 +77,7 @@ export default class PostTemplate extends React.Component {
               <CardText className="post-body">
                 <h1 className="md-display-2 post-header">{post.title}</h1>
                 <PostInfo postNode={postNode} />
+                <PostMap title={post.title} latitude={parseFloat(post.latitude)} longitude={parseFloat(post.longitude)}/>
                 <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
               </CardText>
               <div className="post-meta">
@@ -114,6 +116,8 @@ export const pageQuery = graphql`
         date
         category
         tags
+        latitude
+        longitude
       }
       fields {
         nextTitle
