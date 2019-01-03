@@ -13,7 +13,7 @@ class Carte extends React.Component {
         // [
         //     {title: '', position:['','']}
         // ]
-        console.log(postEdges);
+        // console.log(postEdges);
         if (typeof window !== 'undefined') {
             return (
             <Layout location={this.props.location} title="Carte">
