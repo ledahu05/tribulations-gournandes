@@ -25,10 +25,10 @@ function GetNavList(config) {
   
 
   NavList.push({
-    primaryText: "Sur la carte",
-    leftIcon: <FontIcon forceSize iconClassName={"fa fa-map-marker"} />,
+    primaryText: "Producteurs locaux",
+    leftIcon: <FontIcon forceSize iconClassName={"cow"} />,
     component: Link,
-    to: "/carte"
+    to: "/producteurs"
   });
 
   // NavList.push({
