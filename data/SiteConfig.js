@@ -9,7 +9,7 @@ module.exports = {
   siteDescription: "TODO", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "", //"1825356251115265", // FB Application ID for using app insights
-  siteGATrackingID: "", //"UA-1111111-4", // Tracking code ID for google analytics.
+  siteGATrackingID: "UA-131758063-1", //"UA-1111111-4", // Tracking code ID for google analytics.
   disqusShortname: "tribulations-gourmandes-1", // Disqus shortname.
   postDefaultCategoryID: "Living", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
