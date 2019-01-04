@@ -10,7 +10,7 @@ class Producteur extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
-      <Layout location={this.props.location} title="Producteurs">
+      <Layout location={this.props.location} title="Producteurs locaux">
         <div className="index-container">
           <Helmet>
             <title>{config.siteTitle}</title>
