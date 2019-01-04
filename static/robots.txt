@@ -1,5 +1,7 @@
 User-agent: *
 Disallow: */tags/
 Disallow: */categories/
+Disallow: */restaurant/
+Disallow: */producteur/
 
-sitemap: https://vagr9k.github.io/gatsby-material-starter/sitemap.xml
+sitemap: https://www.tribulations-gourmandes.fr/sitemap.xml
