@@ -11,29 +11,19 @@ longitude: 6.248455
 ---
 Lauréat du Concours Général Agricole de Paris pour son miel :
 
-* 
+\- toutes fleurs (médailles de bronze en 2005 et d'or en 2004)
 
-toutes fleurs (médailles de bronze en 2005 et d'or en 2004)
+\- acacia (médailles d'or en 2004, d'argent en 2005 et de bronze en 2006)
 
-* 
+\- bruyère (médaille d'argent en 2006)
 
-acacia (médailles d'or en 2004, d'argent en 2005 et de bronze en 2006)
+\- lavande (médaille de bronze en 2004)
 
-* 
+\- romarin (médaille de'or en 2006)
 
-bruyère (médaille d'argent en 2006)
+\- Visites commentées groupes et individuels sur rendez-vous.
 
-* 
-
-lavande (médaille de bronze en 2004)
-
-* 
-
-romarin (médaille de'or en 2006)
-
-Visites commentées groupes et individuels sur rendez-vous.
-
-Dégustation de miel et autres produits.
+\- Dégustation de miel et autres produits.
 
 Vidéo sur une saison apicole.
 
