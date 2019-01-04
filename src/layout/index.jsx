@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import "font-awesome/scss/font-awesome.scss";
 import Navigation from "../components/Navigation";
 import config from "../../data/SiteConfig";
+import favicon from "../favicon.png";
 import "./index.scss";
 import "./global.scss";
 
@@ -14,6 +15,7 @@ export default class MainLayout extends React.Component {
         <div>
           <Helmet>
             <meta name="description" content={config.siteDescription} />
+            <link rel="shortcut icon" type="image/png" href={favicon} />
           </Helmet>
           {children}
         </div>
