@@ -26,9 +26,9 @@ function GetNavList(config) {
 
   NavList.push({
     primaryText: "Producteurs locaux",
-    leftIcon: <FontIcon forceSize iconClassName={"cow"} />,
+    leftIcon: <FontIcon forceSize iconClassName={"fa fa-handshake-o"} />,
     component: Link,
-    to: "/producteurs"
+    to: "/producteur"
   });
 
   // NavList.push({

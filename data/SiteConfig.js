@@ -19,7 +19,7 @@ module.exports = {
   userLocation: "Chorges, Hautes-Alpes", // User location to display in the author segment.
   userAvatar: "/assets/avatar.png", // User avatar to display in the author segment.
   userDescription:
-    "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.", // User description to display in the author segment.
+    "Je suis une incontestable gourmande, amatrice de bonne bouffe en tous genres et de bons vins, sans oublier les bières ! Ce blog a pour but de vous décrire les restaurants de la région Hautes-Alpes par le menu ! Je voulais partager avec vous mes coups de cœur et mon avis en général à propos des restos de notre belle région ! J'y parle également des lieux (que je connais) où vous pouvez trouver des produits locaux en les achetant directement aux producteurs sans intermédiaire et qui sont super bons sur le plan gustatif !!",
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {

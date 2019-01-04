@@ -9,7 +9,7 @@ class Navigation extends Component {
   render() {
     console.log(this.props);
     const { children, config, LocalTitle } = this.props;
-    const footerLinks = LocalTitle !== "About";
+    const footerLinks = LocalTitle !== "A propos de moi";
     return (
       <NavigationDrawer
         drawerTitle={config.siteTitle}

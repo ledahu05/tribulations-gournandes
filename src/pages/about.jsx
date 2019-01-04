@@ -7,10 +7,10 @@ import config from "../../data/SiteConfig";
 class AboutPage extends Component {
   render() {
     return (
-      <Layout location={this.props.location} title="About">
+      <Layout location={this.props.location} title="A propos de moi">
         <div className="about-container">
           <Helmet>
-            <title>{`About | ${config.siteTitle}`}</title>
+            <title>{`A propos de moi | ${config.siteTitle}`}</title>
             <link rel="canonical" href={`${config.siteUrl}/about/`} />
           </Helmet>
           <About />
