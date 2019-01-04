@@ -1,6 +1,6 @@
 module.exports = {
   siteTitle: "Tribulations gourmandes", // Site title.
-  siteTitleShort: "Gourmandises", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitleShort: "Tribulations gourmandes", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Tribulations gourmandes", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
   siteUrl: "https://www.tribulations-gourmandes.fr", // Domain of your website without pathPrefix.
