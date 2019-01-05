@@ -4,9 +4,9 @@ module.exports = {
   siteTitleAlt: "Tribulations gourmandes", // Alternative site title for SEO.
   siteLogo: "/logos/favicon.png", // Logo used for SEO and manifest.
   siteUrl: "https://www.tribulations-gourmandes.fr", // Domain of your website without pathPrefix.
-  pathPrefix: "/tribulations-gourmandes", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
+  pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
-  siteDescription: "TODO", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "Les restaurants et producteurs locauax des Hautes-Alpes par le menu", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "", //"1825356251115265", // FB Application ID for using app insights
   siteGATrackingID: "UA-131758063-1", //"UA-1111111-4", // Tracking code ID for google analytics.
