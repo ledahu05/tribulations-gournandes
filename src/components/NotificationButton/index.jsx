@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 //import Notification from 'react-web-notification/lib/components/Notification';
 
 //allow react dev tools work
-if(window) {
+if(typeof window !== 'undefined') {
   window.React = React;
 }
 
