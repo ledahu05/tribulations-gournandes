@@ -91,7 +91,7 @@ class NotificationButton extends Component {
 
   render() {
  
-    const buttonClass = ('Notification' in window) ? 'inline-block' : 'hidden';
+    const buttonClass = (typeof window !== 'undefined' && 'Notification' in window) ? 'inline-block' : 'hidden';
     
     return (
       <div>
