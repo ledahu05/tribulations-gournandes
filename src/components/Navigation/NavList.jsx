@@ -58,6 +58,9 @@ function GetNavList(config) {
     component: Link,
     to: "/about/"
   });
+
+  
+
   return NavList;
 }
 export default GetNavList;
