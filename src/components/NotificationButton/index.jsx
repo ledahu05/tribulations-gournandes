@@ -4,7 +4,10 @@ import Button from '@material-ui/core/Button';
 //import Notification from 'react-web-notification/lib/components/Notification';
 
 //allow react dev tools work
-window.React = React;
+if(window) {
+  window.React = React;
+}
+
 
 
 const styles = theme => ({
