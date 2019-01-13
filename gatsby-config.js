@@ -118,7 +118,7 @@ module.exports = {
         background_color: "#e0e0e0",
         theme_color: "#c62828",
         display: "minimal-ui",
-        "icons": [
+        icons: [
           {
             "src": "windows10/Square71x71Logo.scale-400.png",
             "sizes": "284x284"
