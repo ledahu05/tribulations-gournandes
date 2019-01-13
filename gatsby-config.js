@@ -535,7 +535,9 @@ module.exports = {
       }
     },
     'gatsby-plugin-react-leaflet',
-    "gatsby-plugin-remove-serviceworker",
+    
+    "gatsby-plugin-offline",
+
     {
       resolve: "gatsby-plugin-feed",
       options: {
