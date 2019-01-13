@@ -55,18 +55,18 @@ function  displayConfirmNotification () {
 class NotificationButton extends Component {
     constructor(props) {
       super(props);
-      if(typeof navigator !== 'undefined') {
-        if ('serviceWorker' in navigator) {
-          navigator.serviceWorker
-            .register('/sw.js')
-            .then(function () {
-              console.log('Service worker registered!');
-            })
-            .catch(function(err) {
-              console.log(err);
-            });
-        }
-      }
+      // if(typeof navigator !== 'undefined') {
+      //   if ('serviceWorker' in navigator) {
+      //     navigator.serviceWorker
+      //       .register('/sw.js')
+      //       .then(function () {
+      //         console.log('Service worker registered!');
+      //       })
+      //       .catch(function(err) {
+      //         console.log(err);
+      //       });
+      //   }
+      // }
       
     }
 
