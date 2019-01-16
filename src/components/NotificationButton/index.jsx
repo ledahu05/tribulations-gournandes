@@ -21,31 +21,26 @@ const styles = theme => ({
 });
 
 function  displayConfirmNotification () {
-  console.log('displayConfirmationNotification');
-  console.log('coucou2');
+  
+  
   if(typeof navigator !== 'undefined') {
     if ('serviceWorker' in navigator) {
-      console.log('serviceWorker in navigator');
+  
       var options = {
         body: 'Vous êtes abonné à mon service de notification!',
         icon: '/logos/logo-96.png',
-        
         dir: 'ltr',
         lang: 'fr-FR', // BCP 47,
         vibrate: [100, 50, 200],
-        badge: '/logos/logo-96-bw.png',
         tag: 'confirm-notification',
         renotify: true,
       };
-      console.log('coucou 1');
-      console.log(navigator.serviceWorker);
+  
       navigator.serviceWorker.ready
         .then(function(swreg) {
-          console.log('coucou');
-          console.log(swreg);
-          console.log('serviceWorkerRegistration retrieved', swreg);
+  
           swreg.showNotification('Abonnement enregistré!', options);
-          console.log('notification sent');
+  
         }).catch(function(err) {
           console.log(err);
         });

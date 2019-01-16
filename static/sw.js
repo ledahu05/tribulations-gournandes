@@ -22,3 +22,25 @@ self.addEventListener('install', function(event) {
   self.addEventListener('notificationclose', function(event) {
     console.log('Notification was closed', event);
   });
+
+  self.addEventListener('push', function(event) {
+    console.log('Push Notification received', event);
+  
+    var data = {title: 'Nouvel article!', content: 'Un nouvel article vient d\'être publié!'};
+  
+    if (event.data) {
+      data = JSON.parse(event.data.text());
+    }
+  
+    var options = {
+      body: data.content,
+      icon: '/logos/logo-96.png',
+      data: {
+        url: data.openUrl
+      }
+    };
+  
+    event.waitUntil(
+      self.registration.showNotification(data.title, options)
+    );
+  });
