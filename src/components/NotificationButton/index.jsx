@@ -90,6 +90,10 @@ function configurePushSub() {
     .catch(function(err) {
       console.log(err);
     });
+
+    navigator.serviceWorker.addEventListener('push', function(event) {
+      console.log('Push Notification received', event);
+    });
 }
 
 function urlBase64ToUint8Array(base64String) {
