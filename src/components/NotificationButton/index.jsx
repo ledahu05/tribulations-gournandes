@@ -26,6 +26,11 @@ function  displayConfirmNotification () {
   if(typeof navigator !== 'undefined') {
     if ('serviceWorker' in navigator) {
   
+      navigator.serviceWorker.addEventListener('push', function(event) {
+        console.log('Push Notification received', event);
+      });
+      console.log('sw object', navigator.serviceWorker);
+
       var options = {
         body: 'Vous êtes abonné à mon service de notification!',
         icon: '/logos/logo-96.png',
