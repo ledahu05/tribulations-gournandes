@@ -8,7 +8,8 @@ if(typeof window !== 'undefined') {
   window.React = React;
 }
 
-
+const VAPID_PUBLIC_KEY = 'BGAqrXqiYcDy1whpBm3bqsaQcKRu4nsHEiVMtcNEYKUjCYUnmCXkSLC9MWkqiWJuHX-pGH2lUNxsfAMufZYj5KA';
+const FIREBASE_URL = 'https://pushcontainer.firebaseio.com';
 
 const styles = theme => ({
   button: {
@@ -26,13 +27,13 @@ function  displayConfirmNotification () {
     if ('serviceWorker' in navigator) {
       console.log('serviceWorker in navigator');
       var options = {
-        body: 'You successfully subscribed to our Notification service!',
-        icon: '/logos/logo-192.png',
-        image: '/logos/logo-192.png',
+        body: 'Vous êtes abonné à mon service de notification!',
+        icon: '/logos/logo-96.png',
+        
         dir: 'ltr',
         lang: 'fr-FR', // BCP 47,
         vibrate: [100, 50, 200],
-        badge: '/logos/logo-192.png',
+        badge: '/logos/logo-96-bw.png',
         tag: 'confirm-notification',
         renotify: true,
       };
@@ -43,7 +44,7 @@ function  displayConfirmNotification () {
           console.log('coucou');
           console.log(swreg);
           console.log('serviceWorkerRegistration retrieved', swreg);
-          swreg.showNotification('Successfully subscribed (from SW)!', options);
+          swreg.showNotification('Abonnement enregistré!', options);
           console.log('notification sent');
         }).catch(function(err) {
           console.log(err);
@@ -52,15 +53,70 @@ function  displayConfirmNotification () {
   }
 }
 
+function configurePushSub() {
+  if ((typeof navigator === 'undefined') || !('serviceWorker' in navigator)) {
+    return;
+  }
+
+  var reg;
+  navigator.serviceWorker.ready
+    .then(function(swreg) {
+      reg = swreg;
+      return swreg.pushManager.getSubscription();
+    })
+    .then(function(sub) {
+      if (sub === null) {
+        // Create a new subscription
+        
+        var convertedVapidPublicKey = urlBase64ToUint8Array(VAPID_PUBLIC_KEY);
+        return reg.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey: convertedVapidPublicKey
+        });
+      } else {
+        // We have a subscription
+      }
+    })
+    .then(function(newSub) {
+      return fetch(`${FIREBASE_URL}/subscriptions.json`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(newSub)
+      })
+    })
+    .then(function(res) {
+      if (res.ok) {
+        displayConfirmNotification();
+      }
+    })
+    .catch(function(err) {
+      console.log(err);
+    });
+}
+
+function urlBase64ToUint8Array(base64String) {
+  var padding = '='.repeat((4 - base64String.length % 4) % 4);
+  var base64 = (base64String + padding)
+    .replace(/\-/g, '+')
+    .replace(/_/g, '/');
+
+  var rawData = window.atob(base64);
+  var outputArray = new Uint8Array(rawData.length);
+
+  for (var i = 0; i < rawData.length; ++i) {
+    outputArray[i] = rawData.charCodeAt(i);
+  }
+  return outputArray;
+}
+
 class NotificationButton extends Component {
     constructor(props) {
       super(props);
       this.loadSw();
-      
-    }
-
-  
-    
+    }  
       handleButtonClick = () => {
         
         Notification.requestPermission(function(result) {
@@ -68,7 +124,8 @@ class NotificationButton extends Component {
             if (result !== 'granted') {
             console.log('No notification permission granted!');
             } else {
-              displayConfirmNotification();
+              configurePushSub();
+              //displayConfirmNotification();
             }
         });
           
@@ -92,6 +149,8 @@ class NotificationButton extends Component {
       }
     }
   }
+
+
 
   render() {
  

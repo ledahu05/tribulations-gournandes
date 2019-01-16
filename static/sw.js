@@ -11,3 +11,14 @@ self.addEventListener('install', function(event) {
     console.log('[Service Worker] Fetching something ...', event);
     event.respondWith(fetch(event.request));
   });
+
+  self.addEventListener('notificationclick', function(event) {
+    var notification = event.notification;
+    console.log(notification);
+    notification.close();
+    
+  });
+  
+  self.addEventListener('notificationclose', function(event) {
+    console.log('Notification was closed', event);
+  });
