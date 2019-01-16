@@ -536,7 +536,13 @@ module.exports = {
     },
     'gatsby-plugin-react-leaflet',
     
-    "gatsby-plugin-offline",
+    // "gatsby-plugin-offline",
+    {
+      resolve: 'gatsby-plugin-sw',
+      options: {
+        swPath: 'src/utils/my-service-worker.js', // Default to 'src/sw.js'
+      },
+    },
 
     {
       resolve: "gatsby-plugin-feed",
