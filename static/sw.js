@@ -26,7 +26,7 @@ self.addEventListener('install', function(event) {
   self.addEventListener('push', function(event) {
     console.log('Push Notification received', event);
   
-    var data = {title: 'Nouvel article!', content: 'Un nouvel article vient d\'être publié!'};
+    var data = {title: 'Nouvel article!', content: 'Un nouvel article vient d\'être publié!', openUrl:'/'};
   
     if (event.data) {
       data = JSON.parse(event.data.text());
