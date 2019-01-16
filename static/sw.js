@@ -44,3 +44,4 @@ self.addEventListener('install', function(event) {
       self.registration.showNotification(data.title, options)
     );
   });
+  //
