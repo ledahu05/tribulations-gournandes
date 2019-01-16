@@ -1,3 +1,5 @@
+console.log('coucou');
+
 self.addEventListener('install', function(event) {
     console.log('[Service Worker] Installing Service Worker ...', event);
   });
@@ -14,9 +16,32 @@ self.addEventListener('install', function(event) {
 
   self.addEventListener('notificationclick', function(event) {
     var notification = event.notification;
+    var action = event.action;
+  
     console.log(notification);
-    notification.close();
-    
+  
+    if (action === 'confirm') {
+      console.log('Confirm was chosen');
+      notification.close();
+    } else {
+      console.log(action);
+      event.waitUntil(
+        clients.matchAll()
+          .then(function(clis) {
+            var client = clis.find(function(c) {
+              return c.visibilityState === 'visible';
+            });
+  
+            if (client !== undefined) {
+              client.navigate(notification.data.url);
+              client.focus();
+            } else {
+              clients.openWindow(notification.data.url);
+            }
+            notification.close();
+          })
+      );
+    }
   });
   
   self.addEventListener('notificationclose', function(event) {
