@@ -15,7 +15,7 @@ Le cadre est très agréable même s'il n'y a pas d'extérieur. La décoration e
 
 Côté cuisine,  commençons par parler des entrées : 
 
-les bricks au thon en entrée sont parfates, croustillantes ce qu'il faut avec un garnissage justement dosée et la brick n'est pas sèche du tout. Ils proposent également les bricks à la viande hâchée et le taboulé maison. Coût de l'entrée : en moyenne, 7 euros. 
+les bricks au thon en entrée sont parfaites, croustillantes ce qu'il faut avec un garnissage justement dosée et la brick n'est pas sèche du tout. Ils proposent également les bricks à la viande hâchée et le taboulé maison. Coût de l'entrée : en moyenne, 7 euros. 
 
 Tajine de poulet, d'agneau, je vous conseille la tajine agneau ou poulet à la confiture de tomate qui est original ! La tajine pruneau et amandes est très bonne aussi si vous aimez le sucré/salé. Sinon, plus classique, le poulet, olives et citron confit, la tajine bœufs aux légumes, la tajine boulettes de viande et œufs. Toutes les tajines sont servies avec de la semoule. 
 
@@ -23,7 +23,7 @@ La quantité est au RDV. Pour les prix, comptez environ 16 euros pour une tajine
 
 ![Tajine de poulet à la confiture de tomates, un régal!](/assets/img_20190118_205211.jpg)
 
-Les couscous sont variés : merguez, poulet, agneau, légumes , couscous royal , couscous sucré/salé... vous aurez le choix ! Les prix varient entre 13 euros pour un couscous légumes à 23 euros pour un couscous royal. 
+Pour les couscous vous aurez l'embarras du choix : merguez, poulet, agneau, légumes , couscous royal , couscous sucré/salé... vous aurez le choix ! Les prix varient entre 13 euros pour un couscous légumes à 23 euros pour un couscous royal. 
 
 En dessert, le thé à la menthe et ses délices comprend une tasse de thé et 3 petits desserts orientaux qui peuvent varier : makrouts, corne de gazelle...
 
@@ -39,6 +39,6 @@ Vous pouvez même passer commande et déguster votre repas marocain chez vous !
 
 Ils ont un site internet qui a le mérite d'être très pratique, clair et concis : /www.lesgazellesgap.com
 
-vous y retrouverez l'intégralité du menu !
+vous y retrouverez l'intégralité du menu entre autre!
 
 Pour résumer, si vous avez des envies d'ailleurs et de cuisine orientale, n'hésitez pas à vous rendre aux gazelles !!
