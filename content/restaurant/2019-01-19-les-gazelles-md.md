@@ -23,6 +23,10 @@ La quantité est au RDV. Pour les prix, comptez environ 16 euros pour une tajine
 
 ![Tajine de poulet à la confiture de tomates, un régal!](/assets/img_20190118_205211.jpg)
 
+\    _  Tajine de poulet à la confiture de tomates, un régal!_
+
+
+
 Pour les couscous vous aurez l'embarras du choix : merguez, poulet, agneau, légumes , couscous royal , couscous sucré/salé... vous aurez le choix ! Les prix varient entre 13 euros pour un couscous légumes à 23 euros pour un couscous royal. 
 
 En dessert, le thé à la menthe et ses délices comprend une tasse de thé et 3 petits desserts orientaux qui peuvent varier : makrouts, corne de gazelle...
@@ -30,6 +34,10 @@ En dessert, le thé à la menthe et ses délices comprend une tasse de thé et 3
 La pastilla à la pomme est excellente, servie avec sa glace à la cannelle, cela change des desserts plus classiques dont je vous ai parlé avant. 
 
 ![Pastilla à la pomme et sa glace cannelle, un dessert à goûter!](/assets/img_20190118_214506.jpg)
+
+\    _Pastilla à la pomme et sa glace cannelle, un dessert à goûter!_
+
+
 
 En moyenne, le dessert vous coûtera entre 6 et 7 euros. 
 
