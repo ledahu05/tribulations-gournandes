@@ -11,7 +11,7 @@ longitude: 6.0753039
 ---
 Comme son nom le laisse deviner, ce restaurant est spécialisé dans la cuisine marocaine. Il se trouve à Gap dans les environs du lycée centre.
 
-Le cadre est très agréable même s'il n'y a pas d'extérieur. La décoration est réussie : tapis, tenture, photos, luminaires, tout nous rappele l'Orient. La salle du fond, voûtée, est agréable avec ses banquettes mais attention s'il y a trop de monde, le côté intimiste se transforme vite en côté intrusif !
+Le cadre est très agréable même s'il n'y a pas d'extérieur. La décoration est réussie : tapis, tenture, photos, luminaires, tout nous rappelle l'Orient. La salle du fond, voûtée, est agréable avec ses banquettes mais attention s'il y a trop de monde, le côté intimiste se transforme vite en côté intrusif !
 
 Côté cuisine,  commençons par parler des entrées : 
 
@@ -21,11 +21,17 @@ Tajine de poulet, d'agneau, je vous conseille la tajine agneau ou poulet à la c
 
 La quantité est au RDV. Pour les prix, comptez environ 16 euros pour une tajine. 
 
+![Tajine de poulet à la confiture de tomates, un régal!](/assets/img_20190118_205211.jpg)
+
 Les couscous sont variés : merguez, poulet, agneau, légumes , couscous royal , couscous sucré/salé... vous aurez le choix ! Les prix varient entre 13 euros pour un couscous légumes à 23 euros pour un couscous royal. 
 
 En dessert, le thé à la menthe et ses délices comprend une tasse de thé et 3 petits desserts orientaux qui peuvent varier : makrouts, corne de gazelle...
 
-La pastilla à la pomme est particulièrement réussie, servie avec sa glace à la cannelle, cela change des desserts plus classiques dont je vous ai parlé avant. En moyenne, le dessert vous coûetra entre 6 et 7 euros. 
+La pastilla à la pomme est excellente, servie avec sa glace à la cannelle, cela change des desserts plus classiques dont je vous ai parlé avant. 
+
+![Pastilla à la pomme et sa glace cannelle, un dessert à goûter!](/assets/img_20190118_214506.jpg)
+
+En moyenne, le dessert vous coûtera entre 6 et 7 euros. 
 
 Les gazelles proposent aussi des formules si vous y aller le midi du mardi au vendredi avec une formule rapide à 10 euros qui comprend un plat et un dessert gourmand (thé ou café au choix) ;  une formule plus évoluée avec entrée, plat, dessert à 24,50 euros et même un menu enfant à 8,50 euros : sirop, couscous et glace ! 
 
@@ -36,7 +42,3 @@ Ils ont un site internet qui a le mérite d'être très pratique, clair et conci
 vous y retrouverez l'intégralité du menu !
 
 Pour résumer, si vous avez des envies d'ailleurs et de cuisine orientale, n'hésitez pas à vous rendre aux gazelles !!
-
-![tajine de poulet à la confiture de tomates](/assets/img_20190118_205211.jpg)
-
-![pastilla à la pomme avec sa boule de glace cannelle](/assets/img_20190118_214506.jpg)
