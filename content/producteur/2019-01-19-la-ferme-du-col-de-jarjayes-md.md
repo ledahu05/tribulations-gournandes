@@ -11,24 +11,12 @@ longitude: 6.1018549
 ---
 Raphael et Cindy vous accueillent dans leur ferme! 
 
-
-
 Un lieu pour passer un bon moment en famille, découvrir les animaux de la ferme et même des autruches  en passant par une balade à dos d'âne pour les enfants ou à poney !
 
-La visite commence vers 15h et dure environ 2 heures, à la fin les enfants peuvent nourrir les veaux! 
-
-
+La visite commence vers 15h et dure environ 2 heures: rencontre avec les animaux, explications concernant leur mode de vie, moment où les enfants nourrissent les chèvres et moutons! Et à la fin, pour se requinquer, Raphael et Cindy nous proposent leurs incontournables crêpes au Sarrasin!
 
 Question culinaire vous pouvez y acheter de la farine de petit épeautre excellente pour des crêpes épaisses au bon goût authentique, de la soupe de petit épeautre mais aussi des bières blondes, brunes et ambrées faites avec l'orge cultivée à la ferme à déguster sur place ou à emporter !
 
-
-
-
-
 Des terrines, des œufs et de la viande d'autruche...
-
-
-
-
 
 vous pouvez les retrouver et les suivre sur Facebook !
