@@ -37,8 +37,8 @@ Les gazelles proposent aussi des formules si vous y aller le midi du mardi au ve
 
 Vous pouvez même passer commande et déguster votre repas marocain chez vous !
 
-Ils ont un site internet qui a le mérite d'être très pratique, clair et concis : /www.lesgazellesgap.com
+Ils ont un site internet qui a le mérite d'être très pratique, clair et concis : www.lesgazellesgap.com
 
 vous y retrouverez l'intégralité du menu entre autre!
 
-Pour résumer, si vous avez des envies d'ailleurs et de cuisine orientale, n'hésitez pas à vous rendre aux gazelles !!
+Pour résumer, si vous avez des envies d'ailleurs et en l’occurrence de cuisine orientale, n'hésitez pas à vous rendre aux gazelles !!
