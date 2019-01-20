@@ -38,9 +38,7 @@ un menu enfant à 10 euros est proposé: steack/frites !
 
 ![ceci est une entrée!! oui, oui!! 3 en 1!! ](/assets/img_2027.jpg)
 
-\    _ ceci est une entrée!! oui, oui!! 3 en 1!! _
-
-
+         ceci est une entrée!! oui, oui!! 3 en 1!! 
 
 Vous pouvez dormir sur place à l'étage l'auberge possède des chambres. 
 
@@ -55,3 +53,16 @@ Osez vous enfoncer dans la vallée et vous arrêter à l'auberge, vous ne serez 
 Attention à réserver avant !
 
 Site internet : www.auberge-gaillard.fr
+
+et pour résumer:
+
+les points positifs: 
+- un cadre magnifique
+- un service au top
+- une cuisine alliant simplicité et originalité avec des produits frais et locaux! 
+- la surprise du menu unique et le prix attractif!
+
+les points négatifs:
+- il faut y aller, se perdre jusqu'au fin fond du champsaur!
+- la réservation obligatoire, il faut s'y prendre quelques semaines voire un mois avant. 
+                      
