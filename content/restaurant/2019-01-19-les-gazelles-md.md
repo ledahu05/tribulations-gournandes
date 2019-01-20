@@ -23,9 +23,9 @@ La quantité est au RDV. Pour les prix, comptez environ 16 euros pour une tajine
 
 ![Tajine de poulet à la confiture de tomates, un régal!](/assets/img_20190118_205211.jpg)
 
-\    _  Tajine de poulet à la confiture de tomates, un régal!_
-
-
+```
+                Tajine de poulet à la confiture de tomates, un régal!
+```
 
 Pour les couscous vous aurez l'embarras du choix : merguez, poulet, agneau, légumes , couscous royal , couscous sucré/salé... vous aurez le choix ! Les prix varient entre 13 euros pour un couscous légumes à 23 euros pour un couscous royal. 
 
@@ -33,11 +33,9 @@ En dessert, le thé à la menthe et ses délices comprend une tasse de thé et 3
 
 La pastilla à la pomme est excellente, servie avec sa glace à la cannelle, cela change des desserts plus classiques dont je vous ai parlé avant. 
 
-![Pastilla à la pomme et sa glace cannelle, un dessert à goûter!](/assets/img_20190118_214506.jpg)
+!Pastilla à la pomme et sa glace cannelle, un dessert à goûter!](/assets/img_20190118_214506.jpg)
 
-\    _Pastilla à la pomme et sa glace cannelle, un dessert à goûter!_
-
-
+            Pastilla à la pomme et sa glace cannelle, un dessert à goûter!
 
 En moyenne, le dessert vous coûtera entre 6 et 7 euros. 
 
@@ -49,4 +47,15 @@ Ils ont un site internet qui a le mérite d'être très pratique, clair et conci
 
 vous y retrouverez l'intégralité du menu entre autre!
 
-Pour résumer, si vous avez des envies d'ailleurs et en l’occurrence de cuisine orientale, n'hésitez pas à vous rendre aux gazelles !!
+Si vous avez des envies d'ailleurs et en l’occurrence de cuisine orientale, n'hésitez pas à vous rendre aux gazelles !!
+
+pour résumer, 
+
+les points positifs: 
+- le cadre qui nous fait voyager et nous invite à entrer en Orient!
+- la cuisine typique et savoureuse et les quantités généreuses. 
+- la possibilité de plats à emporter.
+
+les points négatifs: 
+- le choix des vins est restreint sauf si vous appréciez les vins du Mahgreb...
+- dommage qu'il n'y ait pas de menu proposé le soir qui rendrait l'addition plus légère car si vous êtes un bon mangeur et selon le choix des plats, ça chiffre vite!
