@@ -17,7 +17,7 @@ class Index extends React.Component {
             <link rel="canonical" href={`${config.siteUrl}`} />
           </Helmet>
           <SEO postEdges={postEdges} />
-          <PostListing postEdges={postEdges} />
+          <PostListing postEdges={postEdges} type="all"/>
         </div>
       </Layout>
     );

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="640"
+   height="480.00000000000006"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="google-maps-marker.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Google maps marker for residencelamontagne</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="8.5427083"
+     inkscape:cx="-194.49173"
+     inkscape:cy="-741.59234"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <title
+     id="title2">Google maps marker for residencelamontagne</title>
+  <g
+     id="g8"
+     transform="matrix(0.01882298,0,0,0.01660281,-225.70806,1223.5613)">
+    <title
+       id="title4">Layer 1</title>
+    <path
+       stroke-miterlimit="10"
+       d="M 327.83334,1158.7805 C 289.06747,968.47943 220.71738,810.11542 137.93039,663.34052 76.523408,554.46845 5.386445,453.97748 -60.433624,348.40259 -82.405609,313.15857 -101.36758,275.92554 -122.48064,239.34851 c -42.21594,-73.13696 -76.44397,-157.934996 -74.26898,-267.932005 2.125,-107.472995 33.20801,-193.684025 78.02997,-264.172025 73.71907,-115.93497 197.201065,-210.98899 362.88405,-235.96897 135.46606,-20.42401 262.4751,14.08203 352.543,66.74799 73.6001,43.03799 130.59607,100.52701 173.92004,168.28 45.22003,70.716 76.35901,154.26001 78.97101,263.232023 1.33703,55.830017 -7.80499,107.531982 -20.68402,150.417967 -13.03394,43.40906 -33.99597,79.69501 -52.646,118.45404 -36.406,75.659 -82.04895,144.98194 -127.85498,214.34595 C 511.97641,659.35944 383.91733,870.06342 327.83334,1158.7805 Z"
+       id="svg_2"
+       inkscape:connector-curvature="0"
+       style="clip-rule:evenodd;fill:#088132;fill-rule:evenodd;stroke:#000000;stroke-width:37;stroke-miterlimit:10" />
+    <circle
+       cx="332.89102"
+       cy="-7.2209001"
+       r="183.33203"
+       id="svg_4"
+       style="clip-rule:evenodd;fill:#000000;fill-rule:evenodd" />
+  </g>
+</svg>
