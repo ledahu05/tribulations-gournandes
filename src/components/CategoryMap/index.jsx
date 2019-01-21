@@ -42,7 +42,7 @@ class CategoryMap extends Component {
                         style={{
                             height:"400px"
                         }}>
-                        <Map center={userPosition} zoom={11}
+                        <Map center={userPosition} zoom={9}
                             style={{
                                 height:"400px",
                                 zIndex:"0",

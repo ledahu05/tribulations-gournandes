@@ -44,7 +44,7 @@ class PostMap extends Component {
                         style={{
                             height:"400px"
                         }}>
-                        <Map center={position} zoom={11}
+                        <Map center={position} zoom={10}
                             style={{
                                 height:"400px"
                             }}>
