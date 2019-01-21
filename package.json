@@ -43,6 +43,7 @@
     "react-cookie-consent": "^2.0.0",
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.6.0",
+    "react-geolocated": "^2.4.0",
     "react-helmet": "^5.2.0",
     "react-leaflet": "^2.1.4",
     "react-md": "^1.8.0",
