@@ -10,16 +10,20 @@ class PostMap extends Component {
     }
 
     render() {
-        const icon = L.icon({
-            iconUrl: require('./g8.png'),
-            iconSize: [25,41],
-            iconAnchor: null,
-            popupAnchor: [-3, -26],
-            shadowUrl: null,
-            shadowSize: null,
-            shadowAnchor: null
-        });
-
+        let icon = null;
+        if(typeof window !== 'undefined') {
+            const L = require('leaflet');
+            icon = L.icon({
+                iconUrl: require('./g8.png'),
+                iconSize: [25,41],
+                iconAnchor: null,
+                popupAnchor: [-3, -26],
+                shadowUrl: null,
+                shadowSize: null,
+                shadowAnchor: null
+            });    
+        }
+        
         
 
         const userPosition = (this.props.isGeolocationAvailable && this.props.isGeolocationEnabled && this.props.coords) 
@@ -45,10 +49,11 @@ class PostMap extends Component {
                             url='https://{s}.tile.osm.org/{z}/{x}/{y}.png'
                             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                             />
-                            <Marker icon={icon} position={position}>
-                            <Popup><a href={gMapUrl} target="_blank">{title}</a></Popup>
-                                    
-                            </Marker>
+                            {icon && 
+                                <Marker icon={icon} position={position}>
+                                    <Popup><a href={gMapUrl} target="_blank">{title}</a></Popup>   
+                                </Marker>
+                            }
                             { userPosition != null &&
                             <Marker position={userPosition}>
                                 <Popup>
