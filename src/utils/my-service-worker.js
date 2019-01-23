@@ -5,7 +5,7 @@
   workbox.skipWaiting();
   workbox.clientsClaim();
 
-  
+  //fake commit
   // The plugin will pass the files to cache here
   workbox.precaching.precacheAndRoute([])
 
