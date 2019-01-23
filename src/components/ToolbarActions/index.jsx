@@ -16,10 +16,11 @@ const styles = theme => ({
 
 class Toolbar extends Component {
   render() {
+    // <NotificationButton/>
     const { config } = this.props;
     return (
       <div className="toolbar-actions">
-        <NotificationButton/>
+        
         <div className="userlinks-container">
           <UserLinks config={config} />
         </div>
