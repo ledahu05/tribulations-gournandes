@@ -536,7 +536,7 @@ module.exports = {
     },
     'gatsby-plugin-react-leaflet',
     
-    //"gatsby-plugin-offline",
+    "gatsby-plugin-offline",
     {
       resolve: 'gatsby-plugin-sw',
       options: {
