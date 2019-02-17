@@ -13,11 +13,7 @@ L'auberge du moulin est un lieu simple et authentique.
 
 Autrefois, surnommé les 6 fesses car tenu par 3 soeurs il est devenu  les 4 fesses et est ainsi nommé par ceux qui connaissent!
 
-
-
 L'hôtesse est charmante, pleine d'énergie, d'humour et vous mettra vite à l'aise!
-
-
 
 le cadre est rustique, on s'y sent un peu comme à la ferme avec les nappes à carreaux rouge et blanc.
 
@@ -45,12 +41,10 @@ les plus:
 
 \- un service au top avec une hôtesse adorable!
 
-
-
 les moins: 
 
 \- une salle pas très grande et donc je vous conseille de réserver.
 
-![](/assets/img_20190207_210259.jpg)
+![null](/assets/img_20190207_210259.jpg)
 
-![](/assets/img_20190207_223046.jpg)
+![null](/assets/img_20190207_223046.jpg)
