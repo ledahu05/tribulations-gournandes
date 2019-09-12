@@ -55,7 +55,7 @@ export default class PostTemplate extends React.Component {
     if (!post.category_id) {
       post.category_id = config.postDefaultCategoryID;
     }
-
+    console.log("POST templatenn");
     const coverHeight = mobile ? 180 : 350;
     return (
       <Layout location={this.props.location}>
@@ -77,7 +77,11 @@ export default class PostTemplate extends React.Component {
               <CardText className="post-body">
                 <h1 className="md-display-2 post-header">{post.title}</h1>
                 <PostInfo postNode={postNode} />
-                <PostMap title={post.title} latitude={parseFloat(post.latitude)} longitude={parseFloat(post.longitude)}/>
+                <PostMap
+                  title={post.title}
+                  latitude={parseFloat(post.latitude)}
+                  longitude={parseFloat(post.longitude)}
+                />
                 <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
               </CardText>
               <div className="post-meta">

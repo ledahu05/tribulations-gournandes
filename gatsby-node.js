@@ -105,16 +105,23 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allMarkdownRemark {
+            restaurant: allContentfulRestaurant {
               edges {
                 node {
-                  frontmatter {
-                    tags
-                    category
-                  }
-                  fields {
-                    slug
-                  }
+                  categorie
+                  slug
+                  tags
+                  node_locale
+                }
+              }
+            }
+            producteur: allContentfulProducteurLocal {
+              edges {
+                node {
+                  categorie
+                  slug
+                  tags
+                  node_locale
                 }
               }
             }
@@ -129,47 +136,70 @@ exports.createPages = ({ graphql, actions }) => {
 
         const tagSet = new Set();
         const categorySet = new Set();
-        result.data.allMarkdownRemark.edges.forEach(edge => {
-          if (edge.node.frontmatter.tags) {
-            edge.node.frontmatter.tags.forEach(tag => {
+        //restaurant
+        result.data.restaurant.edges.forEach(edge => {
+          if (edge.node.tags) {
+            edge.node.tags.forEach(tag => {
               tagSet.add(tag);
             });
           }
 
-          if (edge.node.frontmatter.category) {
-            categorySet.add(edge.node.frontmatter.category);
+          if (edge.node.categorie) {
+            categorySet.add(edge.node.categorie);
           }
 
           createPage({
-            path: edge.node.fields.slug,
+            path: edge.node.slug,
             component: postPage,
             context: {
-              slug: edge.node.fields.slug
+              slug: edge.node.slug
             }
           });
         });
 
-        const tagList = Array.from(tagSet);
-        tagList.forEach(tag => {
+        result.data.producteur.edges.forEach(edge => {
+          if (edge.node.tags) {
+            edge.node.tags.forEach(tag => {
+              tagSet.add(tag);
+            });
+          }
+
+          if (edge.node.categorie) {
+            categorySet.add(edge.node.categorie);
+          }
+
           createPage({
-            path: `/tags/${_.kebabCase(tag)}/`,
-            component: tagPage,
+            path: edge.node.slug,
+            component: postPage,
             context: {
-              tag
+              slug: edge.node.slug
             }
           });
         });
 
-        const categoryList = Array.from(categorySet);
-        categoryList.forEach(category => {
-          createPage({
-            path: `/categories/${_.kebabCase(category)}/`,
-            component: categoryPage,
-            context: {
-              category
-            }
-          });
-        });
+
+
+        // const tagList = Array.from(tagSet);
+        // tagList.forEach(tag => {
+        //   createPage({
+        //     path: `/tags/${_.kebabCase(tag)}/`,
+        //     component: tagPage,
+        //     context: {
+        //       tag
+        //     }
+        //   });
+        // });
+
+        // const categoryList = Array.from(categorySet);
+        // categoryList.forEach(category => {
+        //   createPage({
+        //     path: `/categories/${_.kebabCase(category)}/`,
+        //     component: categoryPage,
+        //     context: {
+        //       category
+        //     }
+        //   });
+        // });
       })
     );
   });

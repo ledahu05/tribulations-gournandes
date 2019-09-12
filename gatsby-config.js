@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`
+});
+
 const config = require("./data/SiteConfig");
 const urljoin = require("url-join");
 
@@ -21,6 +25,8 @@ module.exports = {
     }
   },
   plugins: [
+    `gatsby-plugin-playground`,
+    
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-lodash",
     "gatsby-plugin-sass",
@@ -612,6 +618,14 @@ module.exports = {
             output: config.siteRss
           }
         ]
+      }
+      
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       }
     }
   ]
