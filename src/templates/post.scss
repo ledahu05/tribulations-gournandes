@@ -1,6 +1,19 @@
 @import '~react-md/src/scss/react-md';
 $phone-status-bar-height: 24px - 12px;
 
+.rich {
+    margin: 0 auto;
+}
+
+.rich-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.rich-desc {
+    text-align: center;
+    font-style: italic;
+}
 .post-page {
     display: flex;
     flex-direction: column;

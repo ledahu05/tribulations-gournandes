@@ -8,7 +8,7 @@ import config from "../../data/SiteConfig";
 export default class TagTemplate extends React.Component {
   render() {
     const { tag } = this.props.pageContext;
-    const postEdges = this.props.data.allMarkdownRemark.edges;
+    const postEdges = this.props.data.allContentfulPost.edges;
 
     return (
       <Layout
@@ -28,26 +28,30 @@ export default class TagTemplate extends React.Component {
 }
 
 export const pageQuery = graphql`
-  query TagPage($tag: String) {
-    allMarkdownRemark(
-      limit: 1000
-      sort: { fields: [fields___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+  query TagQuery($tag: String!) {
+    allContentfulPost(
+      sort: { fields: publication, order: DESC }
+      filter: { tags: { eq: $tag } }
     ) {
-      totalCount
       edges {
         node {
-          fields {
-            slug
-            date
+          slug
+          exerpt
+          nom
+          category
+          publication(formatString: "DD MMMM YYYY ", locale: "fr")
+          tags
+          coordonnees {
+            latitude: lat
+            longitude: lon
           }
-          excerpt
-          timeToRead
-          frontmatter {
-            title
-            tags
-            cover
-            date
+          cover_image {
+            fluid {
+              src
+            }
+          }
+          contenu {
+            json
           }
         }
       }

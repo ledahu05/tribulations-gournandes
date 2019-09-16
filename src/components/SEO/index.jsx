@@ -10,20 +10,24 @@ class SEO extends Component {
     let description;
     let image;
     let postURL;
+    let author;
+    console.log(postNode, "SEO");
     if (postSEO) {
-      const postMeta = postNode.frontmatter;
-      ({ title } = postMeta);
-      description = postMeta.description
-        ? postMeta.description
-        : postNode.excerpt;
-      image = postMeta.cover;
+      const postMeta = postNode;
+      author = postNode.auteur;
+      title = postMeta.nom;
+      description = postMeta.exerpt;
+      image = postMeta.cover_image.fluid.src;
       postURL = urljoin(config.siteUrl, config.pathPrefix, postPath);
     } else {
+      author = "Alexia";
       title = config.siteTitle;
       description = config.siteDescription;
       image = config.siteLogo;
     }
-    image = urljoin(config.siteUrl, config.pathPrefix, image);
+    if (!image.startsWith("//")) {
+      image = urljoin(config.siteUrl, config.pathPrefix, image);
+    }
     const blogURL = urljoin(config.siteUrl, config.pathPrefix);
     const schemaOrgJSONLD = [
       {
@@ -90,10 +94,7 @@ class SEO extends Component {
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:creator"
-          content={config.userTwitter ? config.userTwitter : ""}
-        />
+        <meta name="twitter:creator" content={author} />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />

@@ -38,34 +38,20 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "posts",
-        path: `${__dirname}/content`
-      }
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
     },
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: `gatsby-source-contentful`,
       options: {
-        plugins: [
-          {
-            resolve: "gatsby-remark-relative-images"
-          },
-          {
-            resolve: "gatsby-remark-images",
-            options: {
-              maxWidth: 672
-            }
-          },
-          {
-            resolve: "gatsby-remark-responsive-iframe"
-          },
-          "gatsby-remark-prismjs",
-          "gatsby-remark-copy-linked-files",
-          "gatsby-remark-autolink-headers"
-        ]
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       }
     },
+    `gatsby-transformer-remark`,
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
@@ -84,7 +70,6 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     "gatsby-plugin-catch-links",
-    "gatsby-plugin-netlify-cms",
     "gatsby-plugin-twitter",
     {
       resolve: "gatsby-plugin-sitemap",
@@ -114,6 +99,8 @@ module.exports = {
         }`
       }
     },
+    
+    'gatsby-plugin-react-leaflet',   
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -370,6 +357,12 @@ module.exports = {
             "sizes": "44x44"
           },
           {
+            // {
+            //   resolve: 'gatsby-plugin-sw',
+            //   options: {
+            //     swPath: 'src/utils/my-service-worker.js', // Default to 'src/sw.js'
+            //   },
+            // },
             "src": "windows/windowsphone-mediumtile-360-360.png",
             "sizes": "360x360"
           },
@@ -538,94 +531,6 @@ module.exports = {
             "sizes": "16x16"
           }
         ]
-      }
-    },
-    'gatsby-plugin-react-leaflet',
-    
-    "gatsby-plugin-offline",
-    // {
-    //   resolve: 'gatsby-plugin-sw',
-    //   options: {
-    //     swPath: 'src/utils/my-service-worker.js', // Default to 'src/sw.js'
-    //   },
-    // },
-
-    {
-      resolve: "gatsby-plugin-feed",
-      options: {
-        setup(ref) {
-          const ret = ref.query.site.siteMetadata.rssMetadata;
-          ret.allMarkdownRemark = ref.query.allMarkdownRemark;
-          ret.generator = "GatsbyJS Material Starter";
-          return ret;
-        },
-        query: `
-        {
-          site {
-            siteMetadata {
-              rssMetadata {
-                site_url
-                feed_url
-                title
-                description
-                image_url
-                author
-                copyright
-              }
-            }
-          }
-        }
-      `,
-        feeds: [
-          {
-            serialize(ctx) {
-              const { rssMetadata } = ctx.query.site.siteMetadata;
-              return ctx.query.allMarkdownRemark.edges.map(edge => ({
-                categories: edge.node.frontmatter.tags,
-                date: edge.node.frontmatter.date,
-                title: edge.node.frontmatter.title,
-                description: edge.node.excerpt,
-                author: rssMetadata.author,
-                url: rssMetadata.site_url + edge.node.fields.slug,
-                guid: rssMetadata.site_url + edge.node.fields.slug,
-                custom_elements: [{ "content:encoded": edge.node.html }]
-              }));
-            },
-            query: `
-            {
-              allMarkdownRemark(
-                limit: 1000,
-                sort: { order: DESC, fields: [frontmatter___date] },
-              ) {
-                edges {
-                  node {
-                    excerpt
-                    html
-                    timeToRead
-                    fields { slug }
-                    frontmatter {
-                      title
-                      cover
-                      date
-                      category
-                      tags
-                    }
-                  }
-                }
-              }
-            }
-          `,
-            output: config.siteRss
-          }
-        ]
-      }
-      
-    },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       }
     }
   ]

@@ -32,12 +32,10 @@ class PostMap extends Component {
         const userPosition = (this.props.isGeolocationAvailable && this.props.isGeolocationEnabled && this.props.coords) 
             ? [this.props.coords.latitude, this.props.coords.longitude]
             : null;
-        //console.log('userPosition', userPosition);
         const {latitude, longitude, title} = this.props;
 
         const gMapUrl = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}&zoom=12`;
         const position = [latitude, longitude];
-        //console.log('item position', position);
         if (typeof window !== 'undefined') {
             return (
                     <div

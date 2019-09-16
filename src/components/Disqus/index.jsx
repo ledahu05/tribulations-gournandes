@@ -40,7 +40,6 @@ class Disqus extends Component {
       postNode.fields.slug
     );
 
-    // console.log(config.disqusShortname);
 
     return (
       <Card className="md-grid md-cell md-cell--12">

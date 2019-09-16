@@ -40,24 +40,23 @@ function GetNavList(config) {
 
   if (config.userLinks) {
     config.userLinks.forEach(link => {
-      console.log('fonticon:' + link.iconClassName);
       NavList.push({
-        primaryText: link.label,
+        primaryText: "Contact",
         leftIcon: <FontIcon forceSize iconClassName={link.iconClassName} />,
-        component: "a",
-        href: link.url
+        component: Link,
+        to: "/contact"
       });
     });
   }
 
-  NavList.push({ divider: true });
+  // NavList.push({ divider: true });
 
-  NavList.push({
-    primaryText: "Qui suis-je?",
-    leftIcon: <FontIcon>person</FontIcon>,
-    component: Link,
-    to: "/about/"
-  });
+  // NavList.push({
+  //   primaryText: "Qui suis-je?",
+  //   leftIcon: <FontIcon>person</FontIcon>,
+  //   component: Link,
+  //   to: "/about/"
+  // });
 
   
 

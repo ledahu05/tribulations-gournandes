@@ -9,8 +9,6 @@ class CategoryMap extends Component {
     constructor(props) {
         super(props);
         this.markers = props.markers;
-        console.log('CategoryMap');
-        console.log('markers', this.markers);
         //single or multiple marker
         //center of the map
         //markers {coordinates, title, destination}

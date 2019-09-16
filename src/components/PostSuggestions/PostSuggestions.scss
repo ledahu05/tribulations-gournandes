@@ -7,7 +7,7 @@
   background-color: darken($md-tertiary-color, 5%);
 
   .hide-on-mobile {
-    @media (max-width: 360px - 1px) {
+    @media (max-width: 430px - 1px) {
       display: none;
     }
   }
@@ -32,3 +32,4 @@
     color: $md-secondary-color !important;
   }
 }
+

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Button from "react-md/lib/Buttons";
+import { Link } from "gatsby";
 import "./UserLinks.scss";
 
 class UserLinks extends Component {
@@ -24,7 +25,12 @@ class UserLinks extends Component {
     if (!userLinks) {
       return null;
     }
-    return <div className="user-links">{this.getLinkElements()}</div>;
+    return (
+      <div className="user-links">
+        <Link to="contact" className="lien">Contact </Link>
+        <Link to="mentions-legales" className="lien"> Mentions légales</Link>
+      </div>
+    );
   }
 }
 

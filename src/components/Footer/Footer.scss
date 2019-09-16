@@ -1,15 +1,14 @@
 @import "../../layout/theme.scss";
 
 .footer {
-  justify-content: center;
-  align-content: center;
+  text-align: center;
   background-color: $md-primary-color;
   padding: 10px 5px 5px;
 
   .notice-container {
-    display: flex;
-    align-content: center;
-    align-items: center;
+    // display: flex;
+    // align-content: center;
+    // align-items: center;
     margin-top: 25px;
 
     .copyright {
@@ -20,35 +19,12 @@
       @media (max-width: 640px - 1px) {
         justify-content: center;
       }
-    }
-
-    .rss {
-      display: flex;
-
-      @media (max-width: 640px - 1px) {
-        display: none;
+      h4 {
+        text-align: center;
+        width: 100%;
       }
-
-      flex: 1;
-      justify-content: center;
     }
 
-    .based-on {
-      display: flex;
-
-      @media (max-width: 640px - 1px) {
-        display: none;
-      }
-
-      flex: 1;
-      justify-content: flex-end;
-    }
-
-    h4 {
-      color: $md-secondary-color;
-      text-align: center;
-      margin: 0;
-    }
   }
 }
 
