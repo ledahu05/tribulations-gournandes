@@ -31,11 +31,10 @@ const contact = props => {
               <form
                   name="contact"
                   method="post"
-                  action="/success"
-                  data-netlify="true"
-                  data-netlify-honeypot="bot-field"
+                  action="https://formspree.io/tribulations.gourmandes@gmail.com"
+                  method="POST"
               >
-                  <input type="hidden" name="bot-field" />
+                
                   <TextField
                       id="name"
                       label="Nom"
