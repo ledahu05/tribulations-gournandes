@@ -55,7 +55,7 @@ function addSiblingNodes(createNodeField) {
       name: "prevSlug",
       value: prevNode.fields.slug
     });
-    // console.log(currNode, 'currNode')
+    console.log(currNode, 'currNode')
     // console.log('---------------------------------------- DONE ---------------------------------------------')
   }
 }

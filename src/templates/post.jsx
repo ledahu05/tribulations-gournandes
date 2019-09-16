@@ -169,10 +169,7 @@ export const pageQuery = graphql`
       fields {
         slug
         date
-        nextTitle
-        nextSlug
-        prevTitle
-        prevSlug
+
       }
     }
   }
