@@ -8,7 +8,7 @@ class PostCover extends Component {
     const { fileEdges, postNode, coverHeight, coverClassName } = this.props;
 
     const {cover_image} = postNode
-    console.log(cover_image, 'PostCover')
+    // console.log(cover_image, 'PostCover')
     return (
       <Img
         fluid={cover_image.fluid}

@@ -7,7 +7,7 @@ const postNodes = [];
 
 function grep(obj, str) {
   if (JSON.stringify(obj).includes(str)) {
-    console.log(obj);
+    // console.log(obj);
   }
 }
 
@@ -31,10 +31,10 @@ function addSiblingNodes(createNodeField) {
     const currNode = postNodes[i];
     const nextNode = postNodes[nextID];
     const prevNode = postNodes[prevID];
-    console.log(nextNode.nom, '------------ nextTitle, createNodeField1');
-    console.log(nextNode.fields.slug, '------------ nextSlug, createNodeField2');
-    console.log(prevNode.nom, '------------ prevTitle, createNodeField3');
-    console.log(prevNode.fields.slug, '------------ prevSlug, createNodeField4');
+    // console.log(nextNode.nom, '------------ nextTitle, createNodeField1');
+    // console.log(nextNode.fields.slug, '------------ nextSlug, createNodeField2');
+    // console.log(prevNode.nom, '------------ prevTitle, createNodeField3');
+    // console.log(prevNode.fields.slug, '------------ prevSlug, createNodeField4');
     createNodeField({
       node: currNode,
       name: "nextTitle",
@@ -55,8 +55,8 @@ function addSiblingNodes(createNodeField) {
       name: "prevSlug",
       value: prevNode.fields.slug
     });
-    console.log(currNode, 'currNode')
-    console.log('---------------------------------------- DONE ---------------------------------------------')
+    // console.log(currNode, 'currNode')
+    // console.log('---------------------------------------- DONE ---------------------------------------------')
   }
 }
 

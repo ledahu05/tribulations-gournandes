@@ -11,7 +11,7 @@ class SEO extends Component {
     let image;
     let postURL;
     let author;
-    console.log(postNode, "SEO");
+    // console.log(postNode, "SEO");
     if (postSEO) {
       const postMeta = postNode;
       author = postNode.auteur;

@@ -28,16 +28,16 @@ const getAuthors = graphql`
   }
 `;
 const index = ({author}) => {
-    console.log(author, 'autheur')
+    // console.log(author, 'autheur')
     const data = useStaticQuery(getAuthors);
     const writer = data.allContentfulAuteur.edges.filter((edge) => {
         // console.log(edge.node)
         return edge.node.nom === author
     })
 
-    console.log(writer)
+    // console.log(writer)
     const { nom, photo, bio } = writer[0].node
-    console.log(nom, photo, bio)
+    // console.log(nom, photo, bio)
     return (
         <Card className="md-grid md-cell md-cell--12 user-info">
             <CardTitle

@@ -13,9 +13,9 @@ import "./SocialLinks.scss";
 class SocialLinks extends Component {
   render() {
     const { postNode, postPath, mobile } = this.props;
-    console.log(config.siteUrl, config.pathPrefix, postPath)
+    // console.log(config.siteUrl, config.pathPrefix, postPath)
     const url = urljoin(config.siteUrl, postPath)
-    console.log(url, 'url')
+    // console.log(url, 'url')
     const iconSize = mobile ? 36 : 48;
     const filter = count => (count > 0 ? count : "");
     const renderShareCount = count => (
