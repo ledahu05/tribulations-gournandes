@@ -44,6 +44,7 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    'gatsby-plugin-netlify-cache',
     {
       resolve: `gatsby-source-contentful`,
       options: {
