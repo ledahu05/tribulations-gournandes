@@ -28,49 +28,31 @@ const contact = props => {
           <link rel="canonical" href={`${config.siteUrl}`} />
         </Helmet>
 
-        <form
-          name="contact"
-          action="/success"
-          method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          className="md-grid text-fields__application"
-          id="post"
-        >
-          <input type="hidden" name="bot-field" />
-          <input type="hidden" name="form-name" value="contact" />
-          <TextField
-            id="name"
-            label="Nom"
-            rows={2}
-            maxRows={6}
-            lineDirection="center"
-            placeholder="Merci de saisir votre nom"
-            className="md-cell md-cell--12"
-          />
-          <TextField
-            id="email"
-            label="Email"
-            rows={2}
-            maxRows={6}
-            lineDirection="center"
-            placeholder="Merci de saisir votre adresse email"
-            className="md-cell md-cell--12"
-          />
-          <TextField
-            id="message"
-            label="Message"
-            rows={2}
-            maxRows={6}
-            placeholder="Merci de saisir votre message"
-            className="md-cell md-cell--12"
-          />
-          <CardActions className="md-cell md-cell--12">
-            <Button raised primary type="submit" className="md-cell--right">
-              Envoyer
-            </Button>
-          </CardActions>
-        </form>
+              <form
+                  name="contact"
+                  method="post"
+                  action="/success"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+              >
+                  <input type="hidden" name="bot-field" />
+                  <div>
+                      <label htmlFor="name">Name</label>
+                      <input type="text" name="name" id="name" />
+                  </div>
+                  <div>
+                      <label htmlFor="email">Email</label>
+                      <input type="text" name="email" id="email" />
+                  </div>
+                  <div>
+                      <label htmlFor="message">Message</label>
+                      <textarea name="message" id="message" rows="6" required />
+                  </div>
+                  <div>
+                      <input type="submit" value="Drop a line" />
+                      <input type="reset" value="Eraser" />
+                  </div>
+              </form>
       </div>
     </Layout>
   );
