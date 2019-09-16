@@ -27,47 +27,38 @@ const contact = props => {
           <title>{config.siteTitle}</title>
           <link rel="canonical" href={`${config.siteUrl}`} />
         </Helmet>
-
-              <form
-                  name="contact"
-                  method="post"
-                  action="https://formspree.io/tribulations.gourmandes@gmail.com"
-                  method="POST"
-              >
-                
-                  <TextField
-                      id="name"
-                      label="Nom"
-                      rows={2}
-                      maxRows={6}
-                      lineDirection="center"
-                      placeholder="Merci de saisir votre nom"
-                      className="md-cell md-cell--12"
-                  />
-                  <TextField
-                      id="email"
-                      label="Email"
-                      rows={2}
-                      maxRows={6}
-                      lineDirection="center"
-                      placeholder="Merci de saisir votre adresse email"
-                      className="md-cell md-cell--12"
-                  />
-                  <TextField
-                      id="message"
-                      label="Message"
-                      rows={2}
-                      maxRows={6}
-                      placeholder="Merci de saisir votre message"
-                      className="md-cell md-cell--12"
-                  />
-                  <CardActions className="md-cell md-cell--12">
-                      <Button raised primary type="submit" className="md-cell--right">
-                          Envoyer
-            </Button>
-                  </CardActions>
-                  </form>
-                  </div>
+        <section id="contact-form" class="py-3">
+          {/* <div class="container"> */}
+            <h1 class="l-heading">
+             Nous contacter
+            </h1>
+            <p>Merci d'utiliser le formulaire pour nous contacter par email</p>
+            <form
+              name="contact"
+              method="post"
+              action="https://formspree.io/tribulations.gourmandes@gmail.com"
+              method="POST"
+              id="post"
+            >
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+              </div>
+              <button type="submit" class="btn">
+                Submit
+              </button>
+            </form>
+          {/* </div> */}
+        </section>
+      </div>
     </Layout>
   );
 };
