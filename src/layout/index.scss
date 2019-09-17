@@ -32,6 +32,9 @@ body {
   color: rgba(219, 254, 135, 1);
 }
 
+
+
+
 .bottom {
   position: absolute;
   bottom: 10px;
@@ -96,6 +99,10 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 10;
+  }
+
+  .blink {
+    display: none;
   }
 }
 
