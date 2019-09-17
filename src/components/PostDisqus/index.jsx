@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ReactDisqusComments from "react-disqus-comments";
+import Disqus from 'disqus-react';
 import urljoin from "url-join";
 import Card from "react-md/lib/Cards/Card";
 import CardTitle from "react-md/lib/Cards/CardTitle";
@@ -9,7 +9,7 @@ import FontIcon from "react-md/lib/FontIcons";
 import Snackbar from "react-md/lib/Snackbars";
 import config from "../../../data/SiteConfig";
 
-class Disqus extends Component {
+class PostDisqus extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,6 +17,9 @@ class Disqus extends Component {
     };
     this.notifyAboutComment = this.notifyAboutComment.bind(this);
     this.onSnackbarDismiss = this.onSnackbarDismiss.bind(this);
+
+
+
   }
 
   onSnackbarDismiss() {
@@ -29,7 +32,8 @@ class Disqus extends Component {
     this.setState({ toasts });
   }
   render() {
-    console.log(config.disqusShortname)
+    
+
     const { postNode, expanded } = this.props;
     if (!config.disqusShortname) {
       return null;
@@ -41,7 +45,13 @@ class Disqus extends Component {
       postNode.fields.slug
     );
 
-    console.log(config.disqusShortname, post.slug, post.nom, url, post.category_id);
+    const disqusShortname = config.disqusShortname;
+    const disqusConfig = {
+      url: url,
+      identifier: post.slug,
+      title: post.nom,
+    };
+
     return (
       <Card className="md-grid md-cell md-cell--12">
         <CardTitle
@@ -50,14 +60,13 @@ class Disqus extends Component {
           expander={!expanded}
         />
         <CardText expandable={!expanded}>
-          <ReactDisqusComments
-            shortname={config.disqusShortname}
-            identifier={post.slug}
-            title={post.nom}
-            url={url}
-            category_id={post.category_id}
-            onNewComment={this.notifyAboutComment}
-          />
+          {/* <Disqus.CommentEmbed
+            commentId={this.props.article.featuredComment}
+            showMedia={true}
+            height={160}
+          /> */}
+
+          <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         </CardText>
         <Snackbar
           toasts={this.state.toasts}
@@ -68,4 +77,4 @@ class Disqus extends Component {
   }
 }
 
-export default Disqus;
+export default PostDisqus;

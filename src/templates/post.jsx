@@ -4,8 +4,7 @@ import { graphql } from "gatsby";
 import Card from "react-md/lib/Cards";
 import CardText from "react-md/lib/Cards/CardText";
 import Layout from "../layout";
-import UserInfo from "../components/UserInfo";
-import Disqus from "../components/Disqus";
+import PostDisqus from "../components/PostDisqus";
 import PostTags from "../components/PostTags";
 import PostCover from "../components/PostCover";
 import PostInfo from "../components/PostInfo";
@@ -15,7 +14,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import SEO from "../components/SEO";
 import PostMap from "../components/PostMap";
 import config from "../../data/SiteConfig";
-import Author from '../components/Author'
+import Author from "../components/Author";
 import "./b16-tomorrow-dark.css";
 import "./post.scss";
 
@@ -126,13 +125,13 @@ export default class PostTemplate extends React.Component {
                 />
               </div>
             </Card>
-            <Author author={auteur}/>
+            <Author author={auteur} />
             {/* <UserInfo
               className="md-grid md-cell md-cell--12"
               config={config}
               expanded={expanded}
             /> */}
-            <Disqus postNode={post} expanded={expanded} />
+            <PostDisqus postNode={post} expanded={expanded} />
           </div>
 
           <PostSuggestions postNode={post} />
