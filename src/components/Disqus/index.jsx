@@ -30,7 +30,6 @@ class Disqus extends Component {
   }
   render() {
     const { postNode, expanded } = this.props;
-    console.log(postNode, 'Disquus');
     if (!config.disqusShortname) {
       return null;
     }
