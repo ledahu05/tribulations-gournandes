@@ -27,6 +27,8 @@ class SEO extends Component {
     }
     if (!image.startsWith("//")) {
       image = urljoin(config.siteUrl, config.pathPrefix, image);
+    } else {
+      image = 'https:' + image;
     }
     const blogURL = urljoin(config.siteUrl, config.pathPrefix);
     const schemaOrgJSONLD = [
