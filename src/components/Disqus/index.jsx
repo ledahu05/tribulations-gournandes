@@ -30,10 +30,11 @@ class Disqus extends Component {
   }
   render() {
     const { postNode, expanded } = this.props;
+    console.log(postNode, 'Disquus');
     if (!config.disqusShortname) {
       return null;
     }
-    const post = postNode.frontmatter;
+    const post = postNode;
     const url = urljoin(
       config.siteUrl,
       //config.pathPrefix,
@@ -51,8 +52,8 @@ class Disqus extends Component {
         <CardText expandable={!expanded}>
           <ReactDisqusComments
             shortname={config.disqusShortname}
-            identifier={post.title}
-            title={post.title}
+            identifier={post.nom}
+            title={post.nom}
             url={url}
             category_id={post.category_id}
             onNewComment={this.notifyAboutComment}
