@@ -17,7 +17,7 @@ body {
 
 .hero-home {
   min-height: 90vh;
-//   max-width: 1500px;
+  //   max-width: 1500px;
   background-position: center;
   background-size: cover;
   opacity: 0.8 !important;
@@ -33,9 +33,8 @@ body {
 }
 
 .bottom {
-    position: absolute;
-    bottom: 10px;
-
+  position: absolute;
+  bottom: 10px;
 }
 #contact-form {
   padding: 20px;
@@ -83,6 +82,20 @@ body {
 @-webkit-keyframes blink {
   to {
     visibility: hidden;
+  }
+}
+
+@media (max-width: 430px - 1px) {
+  .hero-home {
+    min-height: 50vh;
+    //   max-width: 1500px;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
   }
 }
 
