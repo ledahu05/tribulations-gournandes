@@ -47,7 +47,7 @@
     "lodash.camelcase": "^4.3.0",
     "moment": "^2.24.0",
     "netlify-cms": "2.9.7",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "prismjs": "^1.17.1",
     "react": "^16.9.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
